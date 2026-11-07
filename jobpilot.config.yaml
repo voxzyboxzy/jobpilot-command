@@ -1,0 +1,26 @@
+# JobPilot Command configuration.
+# Point `facts` and `resume` at files that live outside git before daily use.
+# See README. The paths below run the synthetic example with no secrets.
+
+database: data/jobpilot.db
+facts: examples/candidate.example.yaml
+resume: examples/Alex-Rivera-Resume.pdf
+watchlist: config/watchlist.yaml
+timezone: America/New_York
+dailyAt: "07:30"
+topDefault: 10
+roleFamilies:
+  - entry-software
+  - qa
+  - automation-ai
+  - it-support
+  - data
+  - spanish-bilingual
+llm:
+  provider: heuristic
+  # provider: openai
+  # baseUrl: https://api.openai.com/v1
+  # model: gpt-4o-mini
+  # provider: ollama
+  # baseUrl: http://127.0.0.1:11434
+  # model: llama3.1

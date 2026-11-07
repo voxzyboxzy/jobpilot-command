@@ -1,0 +1,41 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 705 >>
+stream
+BT /F1 12 Tf 72 740 Td (Alex Rivera) Tj ET
+BT /F1 12 Tf 72 718 Td (Tampa, Florida) Tj ET
+BT /F1 12 Tf 72 696 Td (alex.rivera@example.com) Tj ET
+BT /F1 12 Tf 72 674 Td (+1-813-555-0148) Tj ET
+BT /F1 12 Tf 72 652 Td (Synthetic resume for a fictional candidate.) Tj ET
+BT /F1 12 Tf 72 630 Td (Campus IT help desk for 14 months.) Tj ET
+BT /F1 12 Tf 72 608 Td (JavaScript and TypeScript ticket-tagging script.) Tj ET
+BT /F1 12 Tf 72 586 Td (Playwright class-project tests.) Tj ET
+BT /F1 12 Tf 72 564 Td (SQL course project on a library inventory.) Tj ET
+BT /F1 12 Tf 72 542 Td (Spanish and English at a professional working level.) Tj ET
+BT /F1 12 Tf 72 520 Td (Community-college coursework in progress.) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000997 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+1067
+%%EOF

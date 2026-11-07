@@ -1,0 +1,67 @@
+# SYNTHETIC candidate. Alex Rivera is fictional.
+# Do not put a real person's history in this file or commit it.
+# For daily use, copy this file to candidate.local.yaml (gitignored)
+# or to a path outside the repo, then set `facts` in jobpilot.config.yaml
+# or the JOBPILOT_FACTS environment variable. Point `resume` at your PDF
+# the same way (JOBPILOT_RESUME). JobPilot cites fact ids and will not
+# invent employers, degrees, or dates that are absent from that file.
+
+version: 1
+candidate:
+  name: Alex Rivera
+  email: alex.rivera@example.com
+  phone: "+1-813-555-0148"
+  location:
+    city: Tampa
+    region: FL
+    country: US
+  headline: "Entry-level technical support and QA-minded builder"
+facts:
+  - id: loc-tampa
+    kind: preference
+    text: "Lives in Tampa, Florida and can work remotely from the Eastern time zone."
+    tags: [location, remote, florida, eastern]
+  - id: auth-us
+    kind: authorization
+    text: "Is authorized to work in the United States and does not need visa sponsorship."
+    tags: [authorization, us]
+  - id: exp-helpdesk
+    kind: experience
+    text: "Answered campus IT help desk tickets for 14 months, troubleshooting Wi-Fi, account lockouts, software installs, and Windows and macOS basics, and wrote plain-language email replies to students and staff."
+    tags: [support, troubleshooting, windows, macos, writing, customer]
+    start: "2024-01"
+    end: "2025-03"
+  - id: exp-queue
+    kind: experience
+    text: "Worked a browser-based ticketing queue, tagged issues, and drafted short knowledge-base notes for recurring password and printer problems."
+    tags: [ticketing, writing, support]
+  - id: skill-js
+    kind: skill
+    text: "Writes JavaScript and TypeScript for small automation scripts, including a script that suggested ticket tags from the subject line."
+    tags: [javascript, typescript, automation]
+  - id: proj-playwright
+    kind: project
+    text: "Built a class-project Playwright test suite that checks a small web app login and a form submission in Chromium."
+    tags: [playwright, testing, qa, javascript]
+  - id: proj-sql
+    kind: project
+    text: "Queried a small library inventory dataset with SQL selects, filters, and counts for a course project."
+    tags: [sql, data]
+  - id: lang-es
+    kind: language
+    text: "Speaks and writes Spanish and English at a professional working level."
+    tags: [spanish, bilingual, english]
+  - id: skill-excel
+    kind: skill
+    text: "Uses spreadsheets to count tickets by category and make a simple weekly summary."
+    tags: [excel, data]
+  - id: edu-progress
+    kind: education
+    text: "Is taking community-college coursework and has not completed a bachelor's degree."
+    tags: [education]
+  - id: pref-remote
+    kind: preference
+    text: "Wants remote or Florida-feasible hybrid work in entry-level software, QA, automation, IT support, data, or Spanish-bilingual support."
+    tags: [remote, preference]
+resume:
+  path: examples/Alex-Rivera-Resume.pdf

@@ -1,0 +1,26 @@
+import { chromium } from "playwright";
+
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: 1360, height: 900 } });
+await page.goto("http://127.0.0.1:8787/", { waitUntil: "networkidle" });
+await page.evaluate(() => document.fonts.ready);
+await page.getByRole("heading", { name: "Agent pipeline" }).waitFor();
+await page.screenshot({ path: "docs/screenshots/pipeline.png" });
+await page.getByRole("link", { name: "Jobs", exact: true }).click();
+await page.getByRole("heading", { name: "Ranked jobs" }).waitFor();
+await page.screenshot({ path: "docs/screenshots/jobs.png" });
+await page.getByRole("button", { name: "Show evidence" }).first().click();
+await page.locator(".evidence").first().waitFor();
+await page.screenshot({ path: "docs/screenshots/evidence.png" });
+await page.getByRole("link", { name: "Bilingual Customer Experience Specialist (Spanish)" }).click();
+await page.getByRole("heading", { name: "Fields" }).waitFor();
+await page.getByRole("button", { name: "Approve packet" }).click();
+await page.getByRole("status").waitFor();
+const status = await page.getByRole("status").innerText();
+if (!status.includes("Approved")) throw new Error(`approval status: ${status}`);
+await page.screenshot({ path: "docs/screenshots/packet.png", fullPage: true });
+await page.getByRole("link", { name: "Tracker", exact: true }).click();
+await page.getByRole("heading", { name: "Tracker" }).waitFor();
+await page.screenshot({ path: "docs/screenshots/tracker.png" });
+await browser.close();
+console.log("screenshots ok", status);
