@@ -1,0 +1,16 @@
+node_modules/
+dist/
+dist-web/
+data/
+candidate.local.yaml
+candidate.local.json
+candidate.local.pdf
+*.local.yaml
+*.local.json
+.env
+.env.*
+playwright-report/
+test-results/
+blob-report/
+*.tsbuildinfo
+.DS_Store

@@ -1,0 +1,179 @@
+# Starter watchlist of public ATS boards.
+# Each token returned HTTP 200 and a JSON jobs array on 2026-11-07
+# from the Greenhouse, Ashby, or Lever public posting APIs.
+# Counts change daily. Re-check with: npx jobpilot boards verify
+boards:
+  - source: greenhouse
+    token: gitlab
+    company: GitLab
+  - source: greenhouse
+    token: stripe
+    company: Stripe
+  - source: greenhouse
+    token: discord
+    company: Discord
+  - source: greenhouse
+    token: figma
+    company: Figma
+  - source: greenhouse
+    token: coinbase
+    company: Coinbase
+  - source: greenhouse
+    token: cloudflare
+    company: Cloudflare
+  - source: greenhouse
+    token: mongodb
+    company: MongoDB
+  - source: greenhouse
+    token: elastic
+    company: Elastic
+  - source: greenhouse
+    token: datadog
+    company: Datadog
+  - source: greenhouse
+    token: twilio
+    company: Twilio
+  - source: greenhouse
+    token: dropbox
+    company: Dropbox
+  - source: greenhouse
+    token: pinterest
+    company: Pinterest
+  - source: greenhouse
+    token: reddit
+    company: Reddit
+  - source: greenhouse
+    token: instacart
+    company: Instacart
+  - source: greenhouse
+    token: lyft
+    company: Lyft
+  - source: greenhouse
+    token: affirm
+    company: Affirm
+  - source: greenhouse
+    token: brex
+    company: Brex
+  - source: greenhouse
+    token: gusto
+    company: Gusto
+  - source: greenhouse
+    token: duolingo
+    company: Duolingo
+  - source: greenhouse
+    token: intercom
+    company: Intercom
+  - source: greenhouse
+    token: algolia
+    company: Algolia
+  - source: greenhouse
+    token: flexport
+    company: Flexport
+  - source: greenhouse
+    token: robinhood
+    company: Robinhood
+  - source: greenhouse
+    token: chime
+    company: Chime
+  - source: greenhouse
+    token: sofi
+    company: SoFi
+  - source: greenhouse
+    token: squarespace
+    company: Squarespace
+  - source: greenhouse
+    token: vercel
+    company: Vercel
+  - source: greenhouse
+    token: asana
+    company: Asana
+  - source: greenhouse
+    token: okta
+    company: Okta
+  - source: greenhouse
+    token: bitwarden
+    company: Bitwarden
+  - source: greenhouse
+    token: fastly
+    company: Fastly
+  - source: greenhouse
+    token: coursera
+    company: Coursera
+  - source: greenhouse
+    token: block
+    company: Block
+  - source: greenhouse
+    token: godaddy
+    company: GoDaddy
+  - source: greenhouse
+    token: calendly
+    company: Calendly
+  - source: ashby
+    token: ramp
+    company: Ramp
+  - source: ashby
+    token: notion
+    company: Notion
+  - source: ashby
+    token: linear
+    company: Linear
+  - source: ashby
+    token: ashby
+    company: Ashby
+  - source: ashby
+    token: resend
+    company: Resend
+  - source: ashby
+    token: supabase
+    company: Supabase
+  - source: ashby
+    token: posthog
+    company: PostHog
+  - source: ashby
+    token: render
+    company: Render
+  - source: ashby
+    token: sentry
+    company: Sentry
+  - source: ashby
+    token: zapier
+    company: Zapier
+  - source: ashby
+    token: temporal
+    company: Temporal
+  - source: ashby
+    token: clickhouse
+    company: ClickHouse
+  - source: ashby
+    token: perplexity
+    company: Perplexity
+  - source: ashby
+    token: openai
+    company: OpenAI
+  - source: ashby
+    token: cursor
+    company: Cursor
+  - source: ashby
+    token: n8n
+    company: n8n
+  - source: ashby
+    token: oyster
+    company: Oyster
+  - source: ashby
+    token: andela
+    company: Andela
+  - source: ashby
+    token: sanity
+    company: Sanity
+  - source: ashby
+    token: gorgias
+    company: Gorgias
+  - source: lever
+    token: spotify
+    company: Spotify
+  - source: lever
+    token: palantir
+    company: Palantir
+  - source: lever
+    token: binance
+    company: Binance

@@ -1,0 +1,41 @@
+{
+  "name": "jobpilot-command",
+  "version": "1.0.0",
+  "description": "Multi-agent, human-approved job hunting assistant for public Greenhouse, Ashby, and Lever boards.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "bin": {
+    "jobpilot": "./dist/cli/main.js"
+  },
+  "scripts": {
+    "jobpilot": "tsx src/cli/main.ts",
+    "demo": "tsx src/cli/main.ts demo --serve",
+    "eval": "tsx src/eval/run.ts",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p web/tsconfig.json --noEmit",
+    "build": "tsc -p tsconfig.json && vite build --config web/vite.config.ts",
+    "dev:web": "vite --config web/vite.config.ts",
+    "start": "node dist/cli/main.js serve"
+  },
+  "dependencies": {
+    "playwright": "^1.49.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.1",
+    "yaml": "^2.7.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.7",
+    "vitest": "^3.0.2"
+  }
+}
